@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINE</title>
+    <script src="https://kit.fontawesome.com/a5816e152d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Arimo', sans-serif;
+        }
+
+        .container {
+            position: absolute;
+        }
+
+        .sidebar {
+            width: 5em;
+            height: 100vh;
+            position: absolute;
+            box-shadow: 6px -1px 9px -1px rgba(107, 104, 104, 0.75);
+            -webkit-box-shadow: 6px -1px 9px -1px rgba(107, 104, 104, 0.75);
+            -moz-box-shadow: 6px -1px 9px -1px rgba(107, 104, 104, 0.75);
+        }
+
+        .sidebar h2 {
+            padding: 15px;
+            height: 2em;
+            border-bottom: 2px solid #e8e9ea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu-item {
+            text-decoration: none;
+        }
+
+        .menu-item:hover {
+            text-decoration: none;
+        }
+
+
+        .menu-item .icon {
+            width: 100%;
+            font-size: 1.5em;
+        }
+
+        ul {
+            width: 5em;
+        }
+
+        ul li {
+            list-style: none;
+            text-align: center;
+            height: 7em;
+            word-wrap: break-word;
+            font-size: 10px;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            display: flex;
+            text-decoration: none;
+
+        }
+
+        li:hover {
+            background-color: rgb(150, 150, 170);
+            border-left: 3px solid blue;
+        }
+
+        .content {
+            margin-left: 5em;
+            background: #f4f4f6;
+            width: 94%;
+            height: 100vh;
+        }
+
+        .content .header {
+            background: white;
+            height: 5em;
+            width: 100vw;
+        }
+
+        .main-content p {
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        .main-content input {
+            width: 500px;
+            height: 15px;
+            margin-left: 400px;
+            margin-top: 80px;
+            border-radius: 7px;
+            padding: .4em;
+        }
+
+        .main-content h4 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .file {
+            width: 130px;
+            height: 130px;
+            background-color: white;
+            margin-left: 400px;
+            margin-top: 2px;
+            border: 1x solid gray;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+       
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2><a href="#"><i class="fab fa-adn"></i></a></h2>
+            <ul>
+                <li><a href="#" class="menu-item"><i class="far fa-user icon"></i>Student</a></li>
+                <li><a href="#" class="menu-item"><i class="fas fa-clipboard-list icon"></i>Lesson Plan</a></li>
+                <li><a href="#" class="menu-item"><i class="fas fa-cog icon"></i>Settings</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header"></div>
+            <div class="main-content">
+                <p><a href="#"><i class="fas fa-play-circle"></i></i>Videos</a></p><br>
+                <input type="text" placeholder="Insert URL here"><br>
+                <h4>or</h4>
+                <div class="file">
+                    <h6>Upload</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
